@@ -380,7 +380,7 @@
 // }
 // ------- FIM DO PROGRAMA 18 --------
 
-//DÉCIMO NONO PROGRAMA: WHILE
+// DÉCIMO NONO PROGRAMA: WHILE
 // NINETEENTH PROGRAM: WHILE
 // int numero = 5;
 // int contador = 0;
@@ -507,3 +507,121 @@
 // pessoa2.Idade = 37;
 // pessoa2.Apresentar();
 // ------- FIM DO PROGRAMA 23 --------
+
+
+// VIGŚIMO QUARTO PROGRAMA: ARRAY
+// TWENTY-FOURTH PROGRAM: ARRAY
+// int[] arrayInteiros = new int[3];
+
+// arrayInteiros[0] = 27;
+// arrayInteiros[1] = 35;
+// arrayInteiros[2] = 84;
+// // arrayInteiros[3] = 12; // System.IndexOutOfRangeException
+
+// Console.WriteLine($"Tamanho da array: {arrayInteiros.Length}");
+
+// // usando for para percorrer a array
+// Console.WriteLine("\nPercorrendo a array com o for:");
+// for (int contador = 0; contador < arrayInteiros.Length; contador++)
+// {
+//     Console.WriteLine($"Posição: {contador} | Valor: {arrayInteiros[contador]}");
+// }
+
+
+// // usando foreach para percorrer a array
+// Console.WriteLine("\nPercorrendo a array com o foreach:");
+// int contador2 = 0; // serve só para imprimir a posição
+// foreach (int valor in arrayInteiros)
+// {
+//     // precisa fazer o gerenciamento de contador à parte
+//     Console.WriteLine($"Posição: {contador2} | Valor: {valor}");
+//     contador2++;
+// }
+
+// // um array nasce e morre do mesmo tamanho 
+// // uma alternativa é usar o Array.Resize para alterar o tamanho de uma array
+
+// Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+// Console.WriteLine($"\nTamanho da array: {arrayInteiros.Length}");
+// Console.WriteLine("\nPercorrendo a array com o for:");
+// for (int contador = 0; contador < arrayInteiros.Length; contador++)
+// {
+//     Console.WriteLine($"Posição: {contador} | Valor: {arrayInteiros[contador]}");
+// }
+
+// // mas no segundo argumento dá para passar um int como o valor do novo
+// // tamanho da array, por exemplo "10"
+
+// Array.Resize(ref arrayInteiros, 10);
+// Console.WriteLine($"\nTamanho da array: {arrayInteiros.Length}");
+// Console.WriteLine("\nPercorrendo a array com o for:");
+// for (int contador = 0; contador < arrayInteiros.Length; contador++)
+// {
+//     Console.WriteLine($"Posição: {contador} | Valor: {arrayInteiros[contador]}");
+// }
+
+// // as novas posições são inicializadas com 0
+
+// ------- FIM DO PROGRAMA 24 --------
+
+
+// VIGÉSIMO QUINTO PROGRAMA: COPIANDO UM ARRAY
+// TWENTY-FIFTH PROGRAM: COPYING ARRAYS
+// simulando o comando Array.Resize()
+// int[] arrayInteiros = new int[4];
+
+// arrayInteiros[0] = 27;
+// arrayInteiros[1] = 35;
+// arrayInteiros[2] = 84;
+// arrayInteiros[3] = 12;
+
+// int[] arrayInteirosDobrado = new int[arrayInteiros.Length * 2];
+// Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+
+// Console.WriteLine($"\nTamanho da array: {arrayInteirosDobrado.Length}");
+// Console.WriteLine("\nPercorrendo a array com o for:");
+// for (int contador = 0; contador < arrayInteirosDobrado.Length; contador++)
+// {
+//     Console.WriteLine($"Posição: {contador} | Valor: {arrayInteirosDobrado[contador]}");
+// }
+// ------- FIM DO PROGRAMA 25 --------
+
+
+// VIGÉSIMO SEXTO PROGRAMA: LISTAS
+// TWENTY-SIXTH PROGRAM: LISTS
+// List<string> listaString = new List<string>();
+
+// // adicionando elementos um a um
+// listaString.Add("RJ");
+// listaString.Add("CE");
+// listaString.Add("AC");
+
+// // percorrendo a lista com for
+// Console.WriteLine("Percorrendo a lista com for:");
+// for (int contador3 = 0; contador3 < listaString.Count; contador3++)
+// {
+//     Console.WriteLine($"Posição: {contador3} | Valor: {listaString[contador3]}");
+// }
+
+// // adicionando vários elementos
+// listaString.AddRange("PE", "MA", "MG", "ES");
+
+// // percorrendo a lista com foreach
+// Console.WriteLine("\nPercorrendo a lista com for:");
+// int contador4 = 0;
+// foreach (string estado in listaString)
+// {
+//     Console.WriteLine($"Posição: {contador4} | Valor: {estado}");
+//     contador4++;
+// }
+
+// Console.WriteLine($"Itens na lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+// listaString.Add("AM");
+
+// Console.WriteLine($"Itens na lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+// listaString.Remove("MA");
+
+// Console.WriteLine($"Itens na lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+// ------- FIM DO PROGRAMA 26 --------
