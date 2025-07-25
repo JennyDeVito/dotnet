@@ -1,7 +1,8 @@
 ﻿// deve ser o mesmo namespace da classe
-using dotnet.Models;
+// using ExemploFundamentos.Common.Models;
 
 // PRIMEIRO PROGRAMA: ATRIBUIÇÃO DE CLASSE
+// FIRST PROGRAM: CLASS ATRIBUTION
 // // "pessoa1" eh o nome da variavel que sera utilizada na classe pessoa :)
 // Pessoa pessoa1 = new Pessoa();
 // // atribuicao dos dados para a classe
@@ -14,6 +15,7 @@ using dotnet.Models;
 
 
 // SEGUNDO PROGRAMA: ATRIBUIÇÃO DE VARIÁVEIS
+// SECOND PROGRAM: VARIABLE ATRIBUTION
 // string apresentacao = "Olá, seja bem-vindo!";
 // int quantidade = 1;
 // Console.WriteLine("Valor inicial da variável quantidade: " + quantidade);
@@ -36,6 +38,7 @@ using dotnet.Models;
 
 
 // TERCEIRO PROGRAMA: OPERADOR DE ATRIBUIÇÃO (=)
+// THIRD PROGRAM: OPERATOR OF ATTRIBUTION (=)
 // Operador de atribuição é utilizado para atribuir valores a variáveis
 // int a = 10;
 // int b = 20;
@@ -52,6 +55,7 @@ using dotnet.Models;
 
 
 // QUARTO PROGRAMA: CONVERTENDO TIPOS DE DADOS
+// FOURTH PROGRAM: CONVERTING DATA TYPES
 // // cast ou casting é a conversão de um tipo de dado para outro - usando
 // // a classe Convert e o metodo .ToInt32() com a string "5" como argumento
 // int a = Convert.ToInt32("5");
@@ -86,6 +90,7 @@ using dotnet.Models;
 
 
 // QUINTO PROGRAMA: CONVERSÃO PARA STRING
+// FIFTH PROGRAM: CONVERSION TO STRING
 // int inteiro = 5;
 // // string a = inteiro; // nao podemos converter diretamente
 // // precisamos usar o método ToString() para converter o inteiro em string
@@ -98,6 +103,7 @@ using dotnet.Models;
 
 
 // SEXTO PROGRAMA: CASTING IMPLICITO
+// SIXTH PROGRAM: IMPLICIT CASTING
 // // é a conversão automática de um tipo de dado para outro
 // int a = 10;
 // double b = a;
@@ -116,6 +122,7 @@ using dotnet.Models;
 
 
 // SÉTIMO PROGRAMA: ORDEM DE PRECEDÊNCIA
+// SEVENTH PROGRAM: ORDER OF PRECEDENCE
 // // P E D/M A/S 
 
 // // double a = 4 / 2 + 2; // 4 dividido por 2 é 2, depois soma 2, resultado é 4
@@ -127,6 +134,7 @@ using dotnet.Models;
 
 
 // OITAVO PROGRAMA: CONVERTENDO DE MANEIRA SEGURA - USANDO TRY PARSE
+// EIGHTH PROGRAM: SAFE CONVERSION - USING TRY PARSE
 // string a = "15";
 // int b = Convert.ToInt32(a);
 
@@ -145,6 +153,7 @@ using dotnet.Models;
 // ------- FIM DO PROGRAMA 8 --------
 
 // NONO PROGRAMA: OPERADOR CONDICIONAL
+// NINTH PROGRAM: CONDITIONAL OPERATOR
 // int quantidadeEmEstoque = 15;
 // int quantidadeCompra = 4;
 // bool possivelVenda = quantidadeEmEstoque >= quantidadeCompra;
@@ -167,6 +176,7 @@ using dotnet.Models;
 
 
 // DÉCIMO PROGRAMA: OPERADOR CONDICIONAL ANINHADO
+// TENTH PROGRAM: NESTED CONDITIONAL OPERATOR
 // int quantidadeEmEstoque = 15;
 // int quantidadeCompra = 0;
 // bool possivelVenda = quantidadeCompra > 0 && quantidadeEmEstoque >= quantidadeCompra;
@@ -193,6 +203,7 @@ using dotnet.Models;
 
 
 // DÉCIMO PRIMEIRO PROGRAMA: SWITCH CASE
+// ELEVENTH PROGRAM: SWITCH CASE
 // Console.WriteLine("Digite uma letra: ");
 
 // string? letra = Console.ReadLine();
@@ -240,6 +251,7 @@ using dotnet.Models;
 
 
 // DÉCIMO SEGUNDO PROGRAMA: TESTE DE IDADE COM IF ANINHADO
+// TWELFTH PROGRAM: AGE TEST WITH NESTED IF
 // Console.WriteLine("Digite sua idade: ");
 // string? idade = Console.ReadLine();
 
@@ -274,6 +286,7 @@ using dotnet.Models;
 
 
 // DÉCIMO TERCEIRO PROGRAMA: OR (||)
+// THIRTEENTH PROGRAM: OR (||)
 // bool ehMaiorDeIdade = false;
 // bool possuiAutorizacaoDoResponsavel = true;
 
@@ -289,6 +302,7 @@ using dotnet.Models;
 
 
 // DÉCIMO QUARTO PROGRAMA: AND (&&)
+// FOURTEENTH PROGRAM: AND (&&)
 // bool possuiPresencaMinima = true;
 // double media = 8.5;
 
@@ -304,6 +318,7 @@ using dotnet.Models;
 
 
 // DÉCIMO QUINTO PROGRAMA: NOT (!)
+// FIFTEENTH PROGRAM: NOT (!)
 // bool choveu = false;
 // bool estaTarde = false;
 
@@ -319,6 +334,7 @@ using dotnet.Models;
 
 
 // DÉCIMO SEXTO PROGRAMA: INSTANCIANDO A CALCULADORA
+// SIXTEENTH PROGRAM: INSTANTIATING THE CALCULATOR
 // Calculadora calc = new Calculadora();
 
 // calc.Somar(15, 8);
@@ -334,6 +350,7 @@ using dotnet.Models;
 
 
 // DÉCIMO SÉTIMO PROGRAMA: INCREMENTO E DECREMENTO
+// SEVENTEENTH PROGRAM: INCREMENT AND DECREMENT
 // int numero = 10;
 
 // Console.WriteLine(numero);
@@ -354,6 +371,7 @@ using dotnet.Models;
 // ------- FIM DO PROGRAMA 17 --------
 
 // DÉCIMO OITAVO PROGRAMA: FOR
+// EIGHTEENTH PROGRAM: FOR
 // int numero = 5;
 
 // for (int contador = 0; contador <= 10; contador++)
@@ -363,6 +381,7 @@ using dotnet.Models;
 // ------- FIM DO PROGRAMA 18 --------
 
 //DÉCIMO NONO PROGRAMA: WHILE
+// NINETEENTH PROGRAM: WHILE
 // int numero = 5;
 // int contador = 0;
 
@@ -380,6 +399,7 @@ using dotnet.Models;
 
 
 // VIGÉSIMO PROGRAMA: DO-WHILE
+// TWENTIETH PROGRAM: DO-WHILE
 // int soma = 0, numero;
 // string? entrada;
 
@@ -401,6 +421,7 @@ using dotnet.Models;
 
 
 // VIGÉSIMO PRIMEIRO PROGRAMA: MENU INTERATIVO
+// TWENTY-FIRST PROGRAM: INTERACTIVE MENU
 // string? opcao;
 
 // while (true)
@@ -437,6 +458,7 @@ using dotnet.Models;
 
 
 // VIGÉSIMO SEGUNDO PROGRAMA: MENU INTERATIVO REFATORADO
+// TWENTY-SECOND PROGRAM: REFACTORED INTERACTIVE MENU
 // string? opcao;
 // bool exibirMenu = true;
 
@@ -473,5 +495,15 @@ using dotnet.Models;
 // }
 
 // Console.WriteLine("O programa será encerrado!");
-
 // ------- FIM DO PROGRAMA 22 --------
+
+
+// VIGÉSIMO TERCEIRO PROGRAMA: NOVA INSTÂNCIA DE PESSOA
+// TWENTY-THIRD PROGRAM: NEW INSTANCE OF PERSON
+// using ExemploFundamentos.Common.Models;
+
+// Pessoa pessoa2 = new Pessoa();
+// pessoa2.Nome = "Daniel";
+// pessoa2.Idade = 37;
+// pessoa2.Apresentar();
+// ------- FIM DO PROGRAMA 23 --------
