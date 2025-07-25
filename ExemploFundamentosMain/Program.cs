@@ -15,5 +15,6 @@ namespace ExemploFundamentosMain
 }
 
 
-// 
+// simplificação feita a partir do .NET 6 em diante
+// não funciona quando Main está implementado!!!
 //Console.WriteLine("Hello World");
