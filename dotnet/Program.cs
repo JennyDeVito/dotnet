@@ -624,4 +624,18 @@
 // listaString.Remove("MA");
 
 // Console.WriteLine($"Itens na lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+// // inserindo dados na lista com entrada do usuário e validação de valores nulos
+// Console.WriteLine("\nInsira a sigla de um estado: ");
+// string? entrada = Console.ReadLine();
+// if (!string.IsNullOrEmpty(entrada))
+//     listaString.Add(entrada);
+
+// // percorrendo a lista com for
+// Console.WriteLine("Percorrendo a lista com for:");
+// for (int contador5 = 0; contador5 < listaString.Count; contador5++)
+// {
+//     Console.WriteLine($"Posição: {contador5} | Valor: {listaString[contador5]}");
+// }
+
 // ------- FIM DO PROGRAMA 26 --------
