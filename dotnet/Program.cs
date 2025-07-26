@@ -642,6 +642,7 @@
 
 
 // VIGÉSIMO SÉTIMO PROGRAMA: DESAFIO DE CÓDIGO
+// TWENTY-SEVENTH PROGRAM: CODE CHALLENGE
 
 // // Lê o valor original do produto
 // double valorOriginal = Convert.ToDouble(Console.ReadLine());
@@ -660,3 +661,4 @@
 //     Console.WriteLine($"{valorFinal:F2}");
 // }
 // ------- FIM DO PROGRAMA 27 --------
+
