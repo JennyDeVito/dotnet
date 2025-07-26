@@ -639,3 +639,24 @@
 // }
 
 // ------- FIM DO PROGRAMA 26 --------
+
+
+// VIGÉSIMO SÉTIMO PROGRAMA: DESAFIO DE CÓDIGO
+
+// // Lê o valor original do produto
+// double valorOriginal = Convert.ToDouble(Console.ReadLine());
+
+// // Lê a porcentagem de desconto
+// double porcentagemDesconto = Convert.ToDouble(Console.ReadLine());
+
+// if (porcentagemDesconto < 0 || porcentagemDesconto > 100)
+// {
+//     Console.WriteLine("Desconto invalido");
+// }
+// else
+// {
+//     double valorFinal = valorOriginal - (valorOriginal * (porcentagemDesconto / 100));
+//     // Exibe o valor com duas casas decimais
+//     Console.WriteLine($"{valorFinal:F2}");
+// }
+// ------- FIM DO PROGRAMA 27 --------
