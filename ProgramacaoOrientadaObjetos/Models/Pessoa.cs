@@ -50,6 +50,13 @@ namespace ProgramacaoOrientadaObjetos.Models
         // e não pode ser manipulada ou instanciada (e modificar ou fazer atribuição de  
         // valores) a partir do Program.cs, ou de outra classe, por exemplo
 
+        // Desconstrutor
+        public void Deconstruct(out string nome, out string sobrenome)
+        {
+            nome = Nome;
+            sobrenome = Sobrenome;
+        }
+
         private string _nome = "";
         private string _sobrenome = "";
         private int _idade;

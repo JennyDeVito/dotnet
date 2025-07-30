@@ -192,7 +192,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // }
 // ----------END 36TH PROGRAM----------
 
-Console.WriteLine();
 
 // 37º PROGRAMA: TRATANDO EXCEÇÕES
 // 37TH PROGRAMA: HANDLING EXCEPTIONS
@@ -365,3 +364,91 @@ Console.WriteLine();
 // // Obtendo um value do dictionary
 // Console.WriteLine($"\nNão não, perdão, {estados["AM"]}");
 // ----------END 41ST PROGRAM----------
+
+
+// 42º PROGRAMA: TUPLA
+// 42ND PROGRAM: TUPLE
+// // entre parênteses declare os tipos dos dados que serão contidos na sua tupla
+// // pode ser uma alternativa para quando não se quer criar uma classe
+// // essa é a maneira mais recomendada, pela legibilidade do código
+// (int, string, string, decimal) tupla = (123, "Jenny", "DeVito", 1.60m);
+
+// Console.WriteLine($"ID: {tupla.Item1}");
+// Console.WriteLine($"Nome: {tupla.Item2}");
+// Console.WriteLine($"Sobrenome: {tupla.Item3}");
+// Console.WriteLine($"Altura: {tupla.Item4}");
+
+// Console.WriteLine();
+
+// // outra maneira de declarar uma tupla
+// ValueTuple<int, string, string, decimal> outraTupla = (124, "Frida", "Maria", 1.63m);
+
+// Console.WriteLine($"ID: {outraTupla.Item1}");
+// Console.WriteLine($"Nome: {outraTupla.Item2}");
+// Console.WriteLine($"Sobrenome: {outraTupla.Item3}");
+// Console.WriteLine($"Altura: {outraTupla.Item4}");
+
+// Console.WriteLine();
+
+// // mais uma maneira de criar tupla
+// // aqui, o tipo de dado já é identificado e não precisa ser declarado
+// var outroExemploTupla = Tuple.Create(125, "Edith", "Miaph", 1.55m);
+
+// Console.WriteLine($"ID: {outroExemploTupla.Item1}");
+// Console.WriteLine($"Nome: {outroExemploTupla.Item2}");
+// Console.WriteLine($"Sobrenome: {outroExemploTupla.Item3}");
+// Console.WriteLine($"Altura: {outroExemploTupla.Item4}");
+// ----------END 42ND PROGRAM----------
+
+
+// 43º PROGRAMA: MÉTODO COM TUPLA
+// 43RD PROGRAM: METHOD W/ TUPLE
+// LeituraArquivo arquivo = new LeituraArquivo();
+
+// var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+// // se uma tupla retorna 5 informações, mas eu só uso 4, eu posso usar '_' no lugar da informação
+// // descartada, melhorando, assim, a legibilidade do meu código 
+
+// if (sucesso)
+// {
+//     Console.WriteLine($"O arquivo que você passou tem {quantidadeLinhas} linhas");
+//     Console.WriteLine("E foi lido com sucesso! A seguir, leia seu conteúdo: \n");
+//     foreach (string linha in linhasArquivo)
+//     {
+//         Console.WriteLine(linha);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Ocorreu um erro na tentativa de ler seu arquivo. Tente novamente.");
+// }
+// ----------END 43RD PROGRAM----------
+
+
+// 44º PROGRAMA: DESCONSTRUTOR
+// 44TH PROGRAM: DECONSTRUCT
+// Pessoa pessoa5 = new Pessoa("Maria", "José da Silva");
+
+// // usando o desconstrutor
+// (string inicio, string fim) = pessoa5;
+
+// Console.WriteLine($"{inicio}");
+// Console.WriteLine($"{fim}");
+// ----------END 44TH PROGRAM----------
+
+
+// 45º PROGRAMA: OPERADOR TERNÁRIO
+// 45TH PROGRAM: TERNARY OPERATOR
+int numero5 = 20;
+
+if (numero5 % 2 == 0)
+{
+    Console.WriteLine("É par!");
+}
+else
+{
+    Console.WriteLine("Não é par!");
+}
+
+// tenha certeza de fechar todo o operador ternário dentro de parenteses
+Console.WriteLine($"O número {numero5} é " + ((numero5 % 2 == 0)? "par" : "ímpar"));
