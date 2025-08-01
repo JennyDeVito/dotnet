@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 123,
+    "Nome_Produto": "Caneta Tinteiro",
+    "Preco": 125.59,
+    "DataVenda": "2025-07-31T19:03:15.1815578-03:00"
+  },
+  {
+    "Id": 235,
+    "Nome_Produto": "Lapiseira Técnica",
+    "Preco": 67.98,
+    "DataVenda": "2025-07-31T19:03:15.1815578-03:00"
+  },
+  {
+    "Id": 99,
+    "Nome_Produto": "Borracha Macia",
+    "Preco": 9.45,
+    "DataVenda": "2025-07-31T19:03:15.1815578-03:00"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "Id": 456,
+  "Produto": "Caneta",
+  "Preco": 5.15,
+  "DataVenda": "2025-07-31T19:03:14.9423944-03:00"
+}{
+  "Id": 975,
+  "Produto": "Lapiseira",
+  "Preco": 12.36,
+  "DataVenda": "2025-07-31T19:03:14.9423944-03:00"
+}{
+  "Id": 74,
+  "Produto": "Borracha",
+  "Preco": 2.50,
+  "DataVenda": "2025-07-31T19:03:14.9423944-03:00"
+}
