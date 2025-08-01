@@ -4,6 +4,9 @@ using System.Data.Common;
 // alterando a cultura do sistema
 using System.Globalization;
 
+// utilizando o pacote nuget de serialização e deserialização
+using Newtonsoft.Json;
+
 CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // 28º: INSTANCIANDO UMA NOVA PESSOA
@@ -182,7 +185,7 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // 36º PROGRAMA: LENDO UM ARQUIVO
 // 36TH PROGRAM: READING A FILE
-// // Lê o conteúdo de um arquivo
+// Lê o conteúdo de um arquivo
 // string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 
 // // Imprime o conteúdo do arquivo
@@ -439,16 +442,134 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // 45º PROGRAMA: OPERADOR TERNÁRIO
 // 45TH PROGRAM: TERNARY OPERATOR
-int numero5 = 20;
+// int numero5 = 20;
 
-if (numero5 % 2 == 0)
-{
-    Console.WriteLine("É par!");
-}
-else
-{
-    Console.WriteLine("Não é par!");
-}
+// if (numero5 % 2 == 0)
+// {
+//     Console.WriteLine("É par!");
+// }
+// else
+// {
+//     Console.WriteLine("Não é par!");
+// }
 
-// tenha certeza de fechar todo o operador ternário dentro de parenteses
-Console.WriteLine($"O número {numero5} é " + ((numero5 % 2 == 0)? "par" : "ímpar"));
+// // tenha certeza de fechar todo o operador ternário dentro de parenteses
+// Console.WriteLine($"O número {numero5} é " + ((numero5 % 2 == 0) ? "par" : "ímpar"));
+// ----------END 45TH PROGRAM----------
+
+
+// 46º PROGRAMA: SERIALIZAÇÃO POR ITEM
+// 46TH PROGRAM: SERIALIZATION BY ITEM
+// // estabelecendo a data da venda
+// DateTime dataVenda1 = DateTime.Now;
+
+// Venda venda1 = new Venda(456, "Caneta", 5.15m, dataVenda1);
+// Venda venda2 = new Venda(975, "Lapiseira", 12.36m, dataVenda1);
+// Venda venda3 = new Venda(74, "Borracha", 2.50m, dataVenda1);
+
+// // aplicando o pacote nuget Newtonsoft.Json item por item
+// string serializado1 = JsonConvert.SerializeObject(venda1, Formatting.Indented);
+// string serializado2 = JsonConvert.SerializeObject(venda2, Formatting.Indented);
+// string serializado3 = JsonConvert.SerializeObject(venda3, Formatting.Indented);
+
+// // imprimindo na tela o formato json
+// // Console.WriteLine(serializado1);
+// // Console.WriteLine(serializado2);
+// // Console.WriteLine(serializado3);
+
+// // escrevendo em um arquivo, item por item
+// // como o primeiro método é WriteAllText() ele sempre vai criar um arquivo novo
+// File.WriteAllText("Arquivos/vendasItem.json", serializado1);
+// File.AppendAllText("Arquivos/vendasItem.json", serializado2);
+// File.AppendAllText("Arquivos/vendasItem.json", serializado3);
+
+// // fazendo a leitura do arquivo gravado
+// string[] confirmaVendas = File.ReadAllLines("Arquivos/vendasItem.json");
+// foreach (string venda in confirmaVendas)
+// {
+//     Console.WriteLine(venda);
+// }
+// ----------END 46TH PROGRAM----------
+
+
+// 47º PROGRAMA: SERIALIZAÇÃO DE LISTAS
+// 47TH PROGRAM: SERIALIZATION OF LISTS
+// // estabelecendo a data da venda
+// DateTime dataVenda2 = DateTime.Now;
+
+// Venda venda4 = new Venda(123, "Caneta Tinteiro", 125.59m, dataVenda2);
+// Venda venda5 = new Venda(235, "Lapiseira Técnica", 67.98m, dataVenda2);
+// Venda venda6 = new Venda(99, "Borracha Macia", 9.45m, dataVenda2);
+
+// // como temos várias vendas é mais fácil serializá-las em uma coleção
+// // e, para tal, vamos criar uma lista de objetos
+// List<Venda> colecaoVendas = new List<Venda>();
+
+// // adicionando as vendas à lista
+// colecaoVendas.Add(venda4);
+// colecaoVendas.Add(venda5);
+// colecaoVendas.Add(venda6);
+
+// // aplicando o pacote nuget Newtonsoft.Json diretamente à lista de objetos
+// string serializado = JsonConvert.SerializeObject(colecaoVendas, Formatting.Indented);
+
+// // escrevendo a lista serializada no arquivo json
+// File.WriteAllText("Arquivos/vendasLista.json", serializado);
+
+// // confirmando a gravação das vendas
+// string[] confirmaOutrasVendas = File.ReadAllLines("Arquivos/vendasLista.json");
+// foreach (string confirmacao in confirmaOutrasVendas)
+// {
+//     Console.WriteLine(confirmacao);
+// }
+// ----------END 47TH PROGRAM----------
+
+
+// 48º PROGRAMA: DESSERIALIZANDO UM OBJETO
+// 48TH PROGRAM: DESERIALIZING AN OBJECT
+// depois de receber um arquivo .json, você precisa estudá-lo para apreender
+// suas propriedades, neste caso, vamos desserializar o arquivo vendasLista.json
+// que contém as propriedades Id (inteiro), Produto (string), Preco (decimal) e 
+// DataVenda (data no formato ISO 8601, DateTime), daí, eu começo criando uma 
+// classe com as propriedades encontradas
+
+// fazendo a leitura do arquivo com as vendas e armazenando na variável
+string conteudoVendas = File.ReadAllText("Arquivos/vendasLista.json");
+
+// desserializando o conteúdo do arquivo em uma lista de objetos da classe Venda
+// usando o pacote nuget Newtonsoft.Json 
+List<VendaNew> listaVenda = JsonConvert.DeserializeObject<List<VendaNew>>(conteudoVendas)!;
+// o null forgving ! está aqui para desligar os warnings da nullable reference ↑
+
+// imprimindo o conteúdo desserializado em tela 
+foreach (VendaNew transacao in listaVenda)
+{
+    Console.WriteLine($"Id: {transacao.Id}, \nProduto: {transacao.Produto}, " +
+                        $"\nPreço: {transacao.Preco}, \nData: {transacao.DataVenda}\n");
+}
+// ----------END 48TH PROGRAM----------
+
+
+// 49º PROGRAMA: DESSERIALIZANDO UM OBJETO SEM PADRAO
+// 49TH PROGRAM: DESERIALIZING AN OBJECT WITHOUT STANDARD
+// depois de receber um arquivo .json, você precisa estudá-lo para apreender
+// suas propriedades, neste caso, vamos desserializar o arquivo vendasLista.json
+// que contém as propriedades Id (inteiro), Produto (string), Preco (decimal) e 
+// DataVenda (data no formato ISO 8601, DateTime), daí, eu começo criando uma 
+// classe com as propriedades encontradas
+
+// fazendo a leitura do arquivo com as vendas e armazenando na variável
+string conteudoVendas2 = File.ReadAllText("Arquivos/vendasListaSemPadrao.json");
+
+// desserializando o conteúdo do arquivo em uma lista de objetos da classe Venda
+// usando o pacote nuget Newtonsoft.Json 
+List<VendaProp> listaVenda2 = JsonConvert.DeserializeObject<List<VendaProp>>(conteudoVendas2)!;
+// o null forgving ! está aqui para desligar os warnings da nullable reference ↑
+
+// imprimindo o conteúdo desserializado em tela 
+foreach (VendaProp transacao2 in listaVenda2)
+{
+    Console.WriteLine($"Id: {transacao2.Id}, \nProduto: {transacao2.Produto}, " +
+                        $"\nPreço: {transacao2.Preco}, \nData: {transacao2.DataVenda}\n");
+}
+// ----------END 49TH PROGRAM----------
