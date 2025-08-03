@@ -412,7 +412,7 @@
 //     {
 //         Console.WriteLine("Digite um número válido!");
 //     }
-//     soma += numero;
+//     soma += numero;  
 
 // } while (entrada != "0");
 
@@ -459,7 +459,7 @@
 
 // VIGÉSIMO SEGUNDO PROGRAMA: MENU INTERATIVO REFATORADO
 // TWENTY-SECOND PROGRAM: REFACTORED INTERACTIVE MENU
-// string? opcao;
+// string opcao = "";
 // bool exibirMenu = true;
 
 // while (exibirMenu)
@@ -471,7 +471,7 @@
 //     Console.WriteLine("3) Apagar cliente");
 //     Console.WriteLine("4) Encerrar");
 
-//     opcao = Console.ReadLine();
+//     opcao = Console.ReadLine() ?? "";
 
 //     switch (opcao)
 //     {

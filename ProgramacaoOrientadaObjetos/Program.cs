@@ -237,8 +237,8 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // ----------END 37TH PROGRAM----------
 
 
-// 38º PROGRAMA: JOGANDO UMA EXCEÇÃO
-// 38TH PROGRAM: THROWING AN EXCEPTION
+// 38º PROGRAMA: JOGANDO UMA EXCEÇÃO ATRAVÉS DE UM MÉTODO
+// 38TH PROGRAM: THROWING AN EXCEPTION THROUGH A METHOD
 // new ExemploExcecao().Metodo1();
 
 // Console.WriteLine("\nA exceção foi tratada e o programa continuou a ser executado!");
