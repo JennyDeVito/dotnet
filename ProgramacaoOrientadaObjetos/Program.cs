@@ -527,49 +527,49 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // 48º PROGRAMA: DESSERIALIZANDO UM OBJETO
 // 48TH PROGRAM: DESERIALIZING AN OBJECT
-// depois de receber um arquivo .json, você precisa estudá-lo para apreender
-// suas propriedades, neste caso, vamos desserializar o arquivo vendasLista.json
-// que contém as propriedades Id (inteiro), Produto (string), Preco (decimal) e 
-// DataVenda (data no formato ISO 8601, DateTime), daí, eu começo criando uma 
-// classe com as propriedades encontradas
+// // depois de receber um arquivo .json, você precisa estudá-lo para apreender
+// // suas propriedades, neste caso, vamos desserializar o arquivo vendasLista.json
+// // que contém as propriedades Id (inteiro), Produto (string), Preco (decimal) e 
+// // DataVenda (data no formato ISO 8601, DateTime), daí, eu começo criando uma 
+// // classe com as propriedades encontradas
 
-// fazendo a leitura do arquivo com as vendas e armazenando na variável
-string conteudoVendas = File.ReadAllText("Arquivos/vendasLista.json");
+// // fazendo a leitura do arquivo com as vendas e armazenando na variável
+// string conteudoVendas = File.ReadAllText("Arquivos/vendasLista.json");
 
-// desserializando o conteúdo do arquivo em uma lista de objetos da classe Venda
-// usando o pacote nuget Newtonsoft.Json 
-List<VendaNew> listaVenda = JsonConvert.DeserializeObject<List<VendaNew>>(conteudoVendas)!;
-// o null forgving ! está aqui para desligar os warnings da nullable reference ↑
+// // desserializando o conteúdo do arquivo em uma lista de objetos da classe Venda
+// // usando o pacote nuget Newtonsoft.Json 
+// List<VendaNew> listaVenda = JsonConvert.DeserializeObject<List<VendaNew>>(conteudoVendas)!;
+// // o null forgving ! está aqui para desligar os warnings da nullable reference ↑
 
-// imprimindo o conteúdo desserializado em tela 
-foreach (VendaNew transacao in listaVenda)
-{
-    Console.WriteLine($"Id: {transacao.Id}, \nProduto: {transacao.Produto}, " +
-                        $"\nPreço: {transacao.Preco}, \nData: {transacao.DataVenda}\n");
-}
+// // imprimindo o conteúdo desserializado em tela 
+// foreach (VendaNew transacao in listaVenda)
+// {
+//     Console.WriteLine($"Id: {transacao.Id}, \nProduto: {transacao.Produto}, " +
+//                         $"\nPreço: {transacao.Preco}, \nData: {transacao.DataVenda}\n");
+// }
 // ----------END 48TH PROGRAM----------
 
 
 // 49º PROGRAMA: DESSERIALIZANDO UM OBJETO SEM PADRAO
 // 49TH PROGRAM: DESERIALIZING AN OBJECT WITHOUT STANDARD
-// depois de receber um arquivo .json, você precisa estudá-lo para apreender
-// suas propriedades, neste caso, vamos desserializar o arquivo vendasLista.json
-// que contém as propriedades Id (inteiro), Produto (string), Preco (decimal) e 
-// DataVenda (data no formato ISO 8601, DateTime), daí, eu começo criando uma 
-// classe com as propriedades encontradas
+// // depois de receber um arquivo .json, você precisa estudá-lo para apreender
+// // suas propriedades, neste caso, vamos desserializar o arquivo vendasLista.json
+// // que contém as propriedades Id (inteiro), Produto (string), Preco (decimal) e 
+// // DataVenda (data no formato ISO 8601, DateTime), daí, eu começo criando uma 
+// // classe com as propriedades encontradas
 
-// fazendo a leitura do arquivo com as vendas e armazenando na variável
-string conteudoVendas2 = File.ReadAllText("Arquivos/vendasListaSemPadrao.json");
+// // fazendo a leitura do arquivo com as vendas e armazenando na variável
+// string conteudoVendas2 = File.ReadAllText("Arquivos/vendasListaSemPadrao.json");
 
-// desserializando o conteúdo do arquivo em uma lista de objetos da classe Venda
-// usando o pacote nuget Newtonsoft.Json 
-List<VendaProp> listaVenda2 = JsonConvert.DeserializeObject<List<VendaProp>>(conteudoVendas2)!;
-// o null forgving ! está aqui para desligar os warnings da nullable reference ↑
+// // desserializando o conteúdo do arquivo em uma lista de objetos da classe Venda
+// // usando o pacote nuget Newtonsoft.Json 
+// List<VendaProp> listaVenda2 = JsonConvert.DeserializeObject<List<VendaProp>>(conteudoVendas2)!;
+// // o null forgving ! está aqui para desligar os warnings da nullable reference ↑
 
-// imprimindo o conteúdo desserializado em tela 
-foreach (VendaProp transacao2 in listaVenda2)
-{
-    Console.WriteLine($"Id: {transacao2.Id}, \nProduto: {transacao2.Produto}, " +
-                        $"\nPreço: {transacao2.Preco}, \nData: {transacao2.DataVenda}\n");
-}
+// // imprimindo o conteúdo desserializado em tela 
+// foreach (VendaProp transacao2 in listaVenda2)
+// {
+//     Console.WriteLine($"Id: {transacao2.Id}, \nProduto: {transacao2.Produto}, " +
+//                         $"\nPreço: {transacao2.Preco}, \nData: {transacao2.DataVenda}\n");
+// }
 // ----------END 49TH PROGRAM----------
