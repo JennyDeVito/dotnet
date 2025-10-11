@@ -13,14 +13,13 @@
 // pessoa1.Apresentar();
 // --------FIM DO PROGRAMA 1--------
 
-
 // SEGUNDO PROGRAMA: ATRIBUIÇÃO DE VARIÁVEIS
 // SECOND PROGRAM: VARIABLE ATRIBUTION
 // string apresentacao = "Olá, seja bem-vindo!";
 // int quantidade = 1;
 // Console.WriteLine("Valor inicial da variável quantidade: " + quantidade);
-// // reatribuicao da varavel - nao pode declarar novamente o tipo 
-// quantidade = 10; 
+// // reatribuicao da varavel - nao pode declarar novamente o tipo
+// quantidade = 10;
 // double altura = 1.80d;
 // decimal preco = 1.80m;
 // bool condicao = true;
@@ -32,10 +31,9 @@
 // Console.WriteLine("Valor da variável altura: " + altura.ToString("0.00"));
 // Console.WriteLine("Valor da variável preco: " + preco);
 // Console.WriteLine("Valor da variável condicao: " + condicao);
-// Console.WriteLine("Data atual: " + dataAtual); 
+// Console.WriteLine("Data atual: " + dataAtual);
 // Console.WriteLine("Data atual formatada: " + dataAtual.ToString("dd/MM/yyyy HH:mm:ss"));
 // --------FIM DO PROGRAMA 2--------
-
 
 // TERCEIRO PROGRAMA: OPERADOR DE ATRIBUIÇÃO (=)
 // THIRD PROGRAM: OPERATOR OF ATTRIBUTION (=)
@@ -53,7 +51,6 @@
 // Console.WriteLine("Valor de c: " + c);
 // --------FIM DO PROGRAMA 3--------
 
-
 // QUARTO PROGRAMA: CONVERTENDO TIPOS DE DADOS
 // FOURTH PROGRAM: CONVERTING DATA TYPES
 // // cast ou casting é a conversão de um tipo de dado para outro - usando
@@ -63,14 +60,14 @@
 
 // // outra forma de conversão é usando o método Parse
 // int b = int.Parse("10");
-// // Parse já converte a string "10" para o tipo inteiro de 32-bit 
+// // Parse já converte a string "10" para o tipo inteiro de 32-bit
 // // e atribui o valor 10 à variável b
 
 // int c;
 // bool parseResult = int.TryParse("2d", out c);
 
 // // a diferença entre o uso do Parse e o Convert está na forma como lidam com
-// // valores nulos 
+// // valores nulos
 // int d = Convert.ToInt32(null);
 
 // // Parse lançará uma exceção se o valor for nulo e encerrará o programa
@@ -85,9 +82,8 @@
 // Console.WriteLine(parseResult); // Mostra se a conversão foi bem-sucedida
 // Console.WriteLine("Valor de c: " + c); // Se a conversão falhar, c será 0
 // Console.WriteLine("Valor de d: " + d); // Convert retorna 0 se o valor for nulo
-// // Console.WriteLine("Valor de e: " + e); 
+// // Console.WriteLine("Valor de e: " + e);
 // -------- FIM DO PROGRAMA 4 --------
-
 
 // QUINTO PROGRAMA: CONVERSÃO PARA STRING
 // FIFTH PROGRAM: CONVERSION TO STRING
@@ -100,7 +96,6 @@
 
 // Console.WriteLine("Valor de a: " + a); // Mostra o valor de a como string
 // -------- FIM DO PROGRAMA 5 --------
-
 
 // SEXTO PROGRAMA: CASTING IMPLICITO
 // SIXTH PROGRAM: IMPLICIT CASTING
@@ -120,10 +115,9 @@
 // // para o qual será convertido - o inverso não funciona
 // -------- FIM DO PROGRAMA 6 --------
 
-
 // SÉTIMO PROGRAMA: ORDEM DE PRECEDÊNCIA
 // SEVENTH PROGRAM: ORDER OF PRECEDENCE
-// // P E D/M A/S 
+// // P E D/M A/S
 
 // // double a = 4 / 2 + 2; // 4 dividido por 2 é 2, depois soma 2, resultado é 4
 
@@ -131,7 +125,6 @@
 
 // Console.WriteLine(a);
 // -------- FIM DO PROGRAMA 7 --------
-
 
 // OITAVO PROGRAMA: CONVERTENDO DE MANEIRA SEGURA - USANDO TRY PARSE
 // EIGHTH PROGRAM: SAFE CONVERSION - USING TRY PARSE
@@ -174,7 +167,6 @@
 // }
 // ------- FIM DO PROGRAMA 9 --------
 
-
 // DÉCIMO PROGRAMA: OPERADOR CONDICIONAL ANINHADO
 // TENTH PROGRAM: NESTED CONDITIONAL OPERATOR
 // int quantidadeEmEstoque = 15;
@@ -200,7 +192,6 @@
 //     Console.WriteLine("Desculpe, não temos estoque suficiente.");
 // }
 // ------- FIM DO PROGRAMA 10 --------
-
 
 // DÉCIMO PRIMEIRO PROGRAMA: SWITCH CASE
 // ELEVENTH PROGRAM: SWITCH CASE
@@ -249,7 +240,6 @@
 // }
 // ------- FIM DO PROGRAMA 11 --------
 
-
 // DÉCIMO SEGUNDO PROGRAMA: TESTE DE IDADE COM IF ANINHADO
 // TWELFTH PROGRAM: AGE TEST WITH NESTED IF
 // Console.WriteLine("Digite sua idade: ");
@@ -284,7 +274,6 @@
 // }
 // ------- FIM DO PROGRAMA 12 --------
 
-
 // DÉCIMO TERCEIRO PROGRAMA: OR (||)
 // THIRTEENTH PROGRAM: OR (||)
 // bool ehMaiorDeIdade = false;
@@ -299,7 +288,6 @@
 //     Console.WriteLine("Entrada proibida!");
 // }
 // ------- FIM DO PROGRAMA 13 --------
-
 
 // DÉCIMO QUARTO PROGRAMA: AND (&&)
 // FOURTEENTH PROGRAM: AND (&&)
@@ -316,7 +304,6 @@
 // }
 // ------- FIM DO PROGRAMA 14 --------
 
-
 // DÉCIMO QUINTO PROGRAMA: NOT (!)
 // FIFTEENTH PROGRAM: NOT (!)
 // bool choveu = false;
@@ -332,7 +319,6 @@
 // }
 // ------- FIM DO PROGRAMA 15 --------
 
-
 // DÉCIMO SEXTO PROGRAMA: INSTANCIANDO A CALCULADORA
 // SIXTEENTH PROGRAM: INSTANTIATING THE CALCULATOR
 // Calculadora calc = new Calculadora();
@@ -347,7 +333,6 @@
 // calc.Tangente(60);
 // calc.RaizQuadrada(144);
 // ------- FIM DO PROGRAMA 16 --------
-
 
 // DÉCIMO SÉTIMO PROGRAMA: INCREMENTO E DECREMENTO
 // SEVENTEENTH PROGRAM: INCREMENT AND DECREMENT
@@ -397,7 +382,6 @@
 // }
 // ------- FIM DO PROGRAMA 19 --------
 
-
 // VIGÉSIMO PROGRAMA: DO-WHILE
 // TWENTIETH PROGRAM: DO-WHILE
 // int soma = 0, numero;
@@ -412,13 +396,12 @@
 //     {
 //         Console.WriteLine("Digite um número válido!");
 //     }
-//     soma += numero;  
+//     soma += numero;
 
 // } while (entrada != "0");
 
 // Console.WriteLine($"A soma dos números digitados é {soma}.");
 // ------- FIM DO PROGRAMA 20 --------
-
 
 // VIGÉSIMO PRIMEIRO PROGRAMA: MENU INTERATIVO
 // TWENTY-FIRST PROGRAM: INTERACTIVE MENU
@@ -455,7 +438,6 @@
 //     }
 // }
 // ------- FIM DO PROGRAMA 21 --------
-
 
 // VIGÉSIMO SEGUNDO PROGRAMA: MENU INTERATIVO REFATORADO
 // TWENTY-SECOND PROGRAM: REFACTORED INTERACTIVE MENU
@@ -497,7 +479,6 @@
 // Console.WriteLine("O programa será encerrado!");
 // ------- FIM DO PROGRAMA 22 --------
 
-
 // VIGÉSIMO TERCEIRO PROGRAMA: NOVA INSTÂNCIA DE PESSOA
 // TWENTY-THIRD PROGRAM: NEW INSTANCE OF PERSON
 // using ExemploFundamentos.Common.Models;
@@ -507,7 +488,6 @@
 // pessoa2.Idade = 37;
 // pessoa2.Apresentar();
 // ------- FIM DO PROGRAMA 23 --------
-
 
 // VIGŚIMO QUARTO PROGRAMA: ARRAY
 // TWENTY-FOURTH PROGRAM: ARRAY
@@ -527,7 +507,6 @@
 //     Console.WriteLine($"Posição: {contador} | Valor: {arrayInteiros[contador]}");
 // }
 
-
 // // usando foreach para percorrer a array
 // Console.WriteLine("\nPercorrendo a array com o foreach:");
 // int contador2 = 0; // serve só para imprimir a posição
@@ -538,7 +517,7 @@
 //     contador2++;
 // }
 
-// // um array nasce e morre do mesmo tamanho 
+// // um array nasce e morre do mesmo tamanho
 // // uma alternativa é usar o Array.Resize para alterar o tamanho de uma array
 
 // Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
@@ -564,7 +543,6 @@
 
 // ------- FIM DO PROGRAMA 24 --------
 
-
 // VIGÉSIMO QUINTO PROGRAMA: COPIANDO UM ARRAY
 // TWENTY-FIFTH PROGRAM: COPYING ARRAYS
 // simulando o comando Array.Resize()
@@ -585,7 +563,6 @@
 //     Console.WriteLine($"Posição: {contador} | Valor: {arrayInteirosDobrado[contador]}");
 // }
 // ------- FIM DO PROGRAMA 25 --------
-
 
 // VIGÉSIMO SEXTO PROGRAMA: LISTAS
 // TWENTY-SIXTH PROGRAM: LISTS
@@ -640,7 +617,6 @@
 
 // ------- FIM DO PROGRAMA 26 --------
 
-
 // VIGÉSIMO SÉTIMO PROGRAMA: DESAFIO DE CÓDIGO
 // TWENTY-SEVENTH PROGRAM: CODE CHALLENGE
 
@@ -661,4 +637,3 @@
 //     Console.WriteLine($"{valorFinal:F2}");
 // }
 // ------- FIM DO PROGRAMA 27 --------
-

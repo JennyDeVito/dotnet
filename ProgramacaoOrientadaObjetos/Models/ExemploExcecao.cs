@@ -9,7 +9,7 @@ namespace ProgramacaoOrientadaObjetos.Models
     {
         public void Metodo1()
         {
-           try
+            try
             {
                 Metodo2();
             }
@@ -18,14 +18,17 @@ namespace ProgramacaoOrientadaObjetos.Models
                 Console.WriteLine("Exceção tratada!");
             }
         }
+
         public void Metodo2()
         {
             Metodo3();
         }
+
         public void Metodo3()
         {
             Metodo4();
         }
+
         public void Metodo4()
         {
             throw new Exception("Ocorreu uma exceção");

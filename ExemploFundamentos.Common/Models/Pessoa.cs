@@ -15,8 +15,9 @@ namespace ExemploFundamentos.Common.Models
         public void Apresentar()
         {
             // como pular linha sem quebrar a string e "\n" quebra linha
-            Console.WriteLine($"Olá, \n meu nome" +
-            $" é {Nome}, e tenho {Idade} anos.");
+            Console.WriteLine(
+                $"Olá, \n meu nome" + $" é {Nome}, e tenho {Idade} anos."
+            );
         }
     }
 }

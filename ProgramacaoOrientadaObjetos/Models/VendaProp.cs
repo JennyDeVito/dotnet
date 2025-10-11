@@ -8,7 +8,6 @@ using Newtonsoft.Json;
 namespace ProgramacaoOrientadaObjetos.Models
 {
     public class VendaProp
-
     {
         public int Id { get; set; }
 

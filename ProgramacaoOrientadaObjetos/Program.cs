@@ -1,11 +1,9 @@
-﻿using ProgramacaoOrientadaObjetos.Models;
-using System.Data.Common;
-
+﻿using System.Data.Common;
 // alterando a cultura do sistema
 using System.Globalization;
-
 // utilizando o pacote nuget de serialização e deserialização
 using Newtonsoft.Json;
+using ProgramacaoOrientadaObjetos.Models;
 
 CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
@@ -17,7 +15,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // pessoa1.Idade = 25;
 // pessoa1.Apresentar();
 // ----------END 28TH PROGRAM----------
-
 
 // 29º: USANDO A CLASSE CURSO
 // 29TH: USING THE CURSO CLASS
@@ -58,7 +55,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // // TODO: fazer menu para manipulação da classe curso
 // ----------END 29TH PROGRAM----------
 
-
 // 30º PROGRAMA: USANDO + EM STRING E INTS
 // 30TH PROGRAM: USING + IN STRINGS AND INTS
 // string numero1 = "10";
@@ -76,7 +72,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // string resultadoMisturado = numero1 + numero3;
 // Console.WriteLine($"Quando se coloca um inteiro dentro de uma string acontece um cast implicito: {resultadoMisturado}");
 // // ----------END 30TH PROGRAM----------
-
 
 // 31º PROGRAMA: FORMATANDO VALORES MONETÁRIOS
 // 31ST PROGRAM: FORMATTING CURRENCY
@@ -96,7 +91,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // Console.WriteLine($"{valorMonetario:N3}");
 // ----------END 31ST PROGRAM----------
 
-
 // 32º PROGRAMA: REPRESENTANDO PORCENTAGEM
 // 32ND PROGRAM: REPRESENTING PERCENTAGE
 // double porcentagem = .3423;
@@ -104,14 +98,12 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // Console.WriteLine(porcentagem.ToString("P"));
 // ----------END 32ND PROGRAM----------
 
-
 // 32º PROGRAMA: REPRESENTAÇÃO PERSONALIZADA
 // 32RD PROGRAM: PERSONALIZED REPRESENTATION
 // int numero4 = 234567;
 
 // Console.WriteLine(numero4.ToString("##-##-##"));
 // ----------END 33RD PROGRAM----------
-
 
 // 34º PROGRAMA: FORMATANDO DATA E HORA
 // 34TH PROGRAM: FORMATTING DATE AND TIME
@@ -132,7 +124,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // // somente hora
 // Console.WriteLine(data.ToShortTimeString());
 // ----------END 34TH PROGRAM----------
-
 
 // 35º PROGRAMA: CONVERTENDO DATA E HORA
 // 35TH PROGRAM: CONVERTING DATE AND TIME
@@ -160,7 +151,7 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // {
 //     // retorna 01/01/0001 00:00:00 porque o mês é inválido
 //     Console.WriteLine($"{dataString} não é uma data válida!");
-// }  
+// }
 
 // Console.WriteLine();
 // // usando TryParseExact para tentar converter a data válida
@@ -182,7 +173,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // }
 // ----------END 35TH PROGRAM----------
 
-
 // 36º PROGRAMA: LENDO UM ARQUIVO
 // 36TH PROGRAM: READING A FILE
 // Lê o conteúdo de um arquivo
@@ -194,7 +184,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 //     Console.WriteLine(linha);
 // }
 // ----------END 36TH PROGRAM----------
-
 
 // 37º PROGRAMA: TRATANDO EXCEÇÕES
 // 37TH PROGRAMA: HANDLING EXCEPTIONS
@@ -236,14 +225,12 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // Console.WriteLine("\nA exceção foi tratada e o programa continuou a ser executado!");
 // ----------END 37TH PROGRAM----------
 
-
 // 38º PROGRAMA: JOGANDO UMA EXCEÇÃO ATRAVÉS DE UM MÉTODO
 // 38TH PROGRAM: THROWING AN EXCEPTION THROUGH A METHOD
 // new ExemploExcecao().Metodo1();
 
 // Console.WriteLine("\nA exceção foi tratada e o programa continuou a ser executado!");
 // ----------END 38TH PROGRAM----------
-
 
 // 39º PROGRAMA: IMPLEMENTANDO UMA FILA
 // 39TH PROGRAM: IMPLEMENTING A QUEUE
@@ -274,7 +261,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // }
 // ----------END 39TH PROGRAM----------
 
-
 // 40º PROGRAMA: PILHAS
 // 40TH PROGRAM: STACKS
 // Console.WriteLine("Pilhas");
@@ -302,7 +288,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 //     Console.WriteLine(camada);
 // }
 // ----------END 40TH PROGRAM----------
-
 
 // 41º PROGRAMA: DICIONÁRIO
 // 41ST PROGRAM: DICTIONARY
@@ -334,7 +319,7 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 //     Console.WriteLine($"Sigla: {unidade.Key}, Nome: {unidade.Value}");
 // }
 
-// // é possível alteral o values, mas não  as keys nos dictionaries 
+// // é possível alteral o values, mas não  as keys nos dictionaries
 // // alterando um value
 // estados["RJ"] = "Hell de Janeiro";
 // Console.WriteLine("\nAlterado value de RJ:\n");
@@ -367,7 +352,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // // Obtendo um value do dictionary
 // Console.WriteLine($"\nNão não, perdão, {estados["AM"]}");
 // ----------END 41ST PROGRAM----------
-
 
 // 42º PROGRAMA: TUPLA
 // 42ND PROGRAM: TUPLE
@@ -403,14 +387,13 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // Console.WriteLine($"Altura: {outroExemploTupla.Item4}");
 // ----------END 42ND PROGRAM----------
 
-
 // 43º PROGRAMA: MÉTODO COM TUPLA
 // 43RD PROGRAM: METHOD W/ TUPLE
 // LeituraArquivo arquivo = new LeituraArquivo();
 
 // var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
 // // se uma tupla retorna 5 informações, mas eu só uso 4, eu posso usar '_' no lugar da informação
-// // descartada, melhorando, assim, a legibilidade do meu código 
+// // descartada, melhorando, assim, a legibilidade do meu código
 
 // if (sucesso)
 // {
@@ -427,7 +410,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // }
 // ----------END 43RD PROGRAM----------
 
-
 // 44º PROGRAMA: DESCONSTRUTOR
 // 44TH PROGRAM: DECONSTRUCT
 // Pessoa pessoa5 = new Pessoa("Maria", "José da Silva");
@@ -438,7 +420,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // Console.WriteLine($"{inicio}");
 // Console.WriteLine($"{fim}");
 // ----------END 44TH PROGRAM----------
-
 
 // 45º PROGRAMA: OPERADOR TERNÁRIO
 // 45TH PROGRAM: TERNARY OPERATOR
@@ -456,7 +437,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // // tenha certeza de fechar todo o operador ternário dentro de parenteses
 // Console.WriteLine($"O número {numero5} é " + ((numero5 % 2 == 0) ? "par" : "ímpar"));
 // ----------END 45TH PROGRAM----------
-
 
 // 46º PROGRAMA: SERIALIZAÇÃO POR ITEM
 // 46TH PROGRAM: SERIALIZATION BY ITEM
@@ -491,7 +471,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // }
 // ----------END 46TH PROGRAM----------
 
-
 // 47º PROGRAMA: SERIALIZAÇÃO DE LISTAS
 // 47TH PROGRAM: SERIALIZATION OF LISTS
 // // estabelecendo a data da venda
@@ -524,24 +503,23 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // }
 // ----------END 47TH PROGRAM----------
 
-
 // 48º PROGRAMA: DESSERIALIZANDO UM OBJETO
 // 48TH PROGRAM: DESERIALIZING AN OBJECT
 // // depois de receber um arquivo .json, você precisa estudá-lo para apreender
 // // suas propriedades, neste caso, vamos desserializar o arquivo vendasLista.json
-// // que contém as propriedades Id (inteiro), Produto (string), Preco (decimal) e 
-// // DataVenda (data no formato ISO 8601, DateTime), daí, eu começo criando uma 
+// // que contém as propriedades Id (inteiro), Produto (string), Preco (decimal) e
+// // DataVenda (data no formato ISO 8601, DateTime), daí, eu começo criando uma
 // // classe com as propriedades encontradas
 
 // // fazendo a leitura do arquivo com as vendas e armazenando na variável
 // string conteudoVendas = File.ReadAllText("Arquivos/vendasLista.json");
 
 // // desserializando o conteúdo do arquivo em uma lista de objetos da classe Venda
-// // usando o pacote nuget Newtonsoft.Json 
+// // usando o pacote nuget Newtonsoft.Json
 // List<VendaNew> listaVenda = JsonConvert.DeserializeObject<List<VendaNew>>(conteudoVendas)!;
 // // o null forgving ! está aqui para desligar os warnings da nullable reference ↑
 
-// // imprimindo o conteúdo desserializado em tela 
+// // imprimindo o conteúdo desserializado em tela
 // foreach (VendaNew transacao in listaVenda)
 // {
 //     Console.WriteLine($"Id: {transacao.Id}, \nProduto: {transacao.Produto}, " +
@@ -549,24 +527,23 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // }
 // ----------END 48TH PROGRAM----------
 
-
 // 49º PROGRAMA: DESSERIALIZANDO UM OBJETO SEM PADRAO
 // 49TH PROGRAM: DESERIALIZING AN OBJECT WITHOUT STANDARD
 // // depois de receber um arquivo .json, você precisa estudá-lo para apreender
 // // suas propriedades, neste caso, vamos desserializar o arquivo vendasLista.json
-// // que contém as propriedades Id (inteiro), Produto (string), Preco (decimal) e 
-// // DataVenda (data no formato ISO 8601, DateTime), daí, eu começo criando uma 
+// // que contém as propriedades Id (inteiro), Produto (string), Preco (decimal) e
+// // DataVenda (data no formato ISO 8601, DateTime), daí, eu começo criando uma
 // // classe com as propriedades encontradas
 
 // // fazendo a leitura do arquivo com as vendas e armazenando na variável
 // string conteudoVendas2 = File.ReadAllText("Arquivos/vendasListaSemPadrao.json");
 
 // // desserializando o conteúdo do arquivo em uma lista de objetos da classe Venda
-// // usando o pacote nuget Newtonsoft.Json 
+// // usando o pacote nuget Newtonsoft.Json
 // List<VendaProp> listaVenda2 = JsonConvert.DeserializeObject<List<VendaProp>>(conteudoVendas2)!;
 // // o null forgving ! está aqui para desligar os warnings da nullable reference ↑
 
-// // imprimindo o conteúdo desserializado em tela 
+// // imprimindo o conteúdo desserializado em tela
 // foreach (VendaProp transacao2 in listaVenda2)
 // {
 //     Console.WriteLine($"Id: {transacao2.Id}, \nProduto: {transacao2.Produto}, " +

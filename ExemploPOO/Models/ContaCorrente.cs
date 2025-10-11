@@ -12,6 +12,7 @@ namespace ExemploPOO.Models
             NumeroConta = numeroConta;
             saldo = saldoInicial;
         }
+
         public int NumeroConta { get; set; }
 
         // o método saldo está encapsulado pelos médotos Sacar(), Deposito() e
@@ -28,7 +29,9 @@ namespace ExemploPOO.Models
             }
             else
             {
-                Console.WriteLine($"Não foi possível realizar o saque. Verifique o seu saldo.");
+                Console.WriteLine(
+                    $"Não foi possível realizar o saque. Verifique o seu saldo."
+                );
             }
         }
 
@@ -38,6 +41,7 @@ namespace ExemploPOO.Models
             saldo += valor;
             Console.WriteLine("Depósito realizado.");
         }
+
         public void ExibirSaldo()
         {
             Console.WriteLine($"Saldo disponível: {saldo:C}");

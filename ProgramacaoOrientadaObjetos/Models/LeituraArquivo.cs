@@ -7,7 +7,9 @@ namespace ProgramacaoOrientadaObjetos.Models
 {
     public class LeituraArquivo
     {
-        public (bool Sucesso, string[] Linhas, int TotalLinhas) LerArquivo(string caminho)
+        public (bool Sucesso, string[] Linhas, int TotalLinhas) LerArquivo(
+            string caminho
+        )
         {
             try
             {

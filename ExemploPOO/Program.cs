@@ -1,12 +1,12 @@
-﻿using ExemploPOO.Models;
-using System.Globalization;
+﻿using System.Globalization;
+using ExemploPOO.Models;
 
 CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // 50º PROGRAMA: CRIANDO O OBJETO PESSOA
 // 50TH PROGRAM: CREATING A PERSON OBJECT
 // // instanciar uma nova classe é concretizar um novo objeto daquela classe
-// // é criar um objeto (pessoa1) daquele tipo de classe 
+// // é criar um objeto (pessoa1) daquele tipo de classe
 // Pessoa pessoa1 = new Pessoa();
 // pessoa1.Nome = "Jenny";
 // pessoa1.Idade = 36;
@@ -15,7 +15,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // //Console.WriteLine(pessoa1.ToString());
 // ----------END 50TH PROGRAM----------
-
 
 // 51º PROGRAMA: CRIANDO O OBJETO CONTA CORRENTE
 // 51ST PROGRAM: CREATING A CHECKING ACCOUNT OBJECT
@@ -38,7 +37,6 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // conta1.Deposito(1000m);
 // conta1.ExibirSaldo();
 // ----------END 51ST PROGRAM----------
-
 
 // 52º PROGRAMA: EXPERIMENTANDO HERANÇA E POLIMORFISMO
 // 52ND PROGRAM: EXPERIMENTIG HERITAGE AND POLIMORFISM

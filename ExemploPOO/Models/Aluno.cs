@@ -13,7 +13,9 @@ namespace ExemploPOO.Models
         // 'override' sobrescreve o método Apresentar() da classe pai
         public override void Apresentar()
         {
-            Console.WriteLine($"Olá, meu nome é {Nome}, tenho {Idade} anos e sou um aluno nota {Nota}!");
+            Console.WriteLine(
+                $"Olá, meu nome é {Nome}, tenho {Idade} anos e sou um aluno nota {Nota}!"
+            );
         }
     }
 }
